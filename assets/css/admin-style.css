@@ -1,0 +1,338 @@
+/**
+ * Estilos administrativos para Restrict Lessons
+ */
+
+/* Contenedor principal de configuración */
+.rl-settings-wrapper {
+    max-width: 1200px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rl-settings-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background: #f8f9fa;
+    border-radius: 8px 8px 0 0;
+}
+
+.rl-settings-header h2 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+.rl-settings-content {
+    padding: 30px;
+}
+
+/* Campos de formulario */
+.rl-form-group {
+    margin-bottom: 25px;
+}
+
+.rl-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.rl-form-group input[type="text"],
+.rl-form-group input[type="number"],
+.rl-form-group select,
+.rl-form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.rl-form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Campos de producto */
+.rl-product-fields {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+    display: none;
+}
+
+.rl-product-search {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.rl-product-search input {
+    padding-right: 30px;
+}
+
+.rl-product-search i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+/* Información del producto */
+.rl-product-info {
+    margin-top: 15px;
+    display: none;
+}
+
+.rl-product-preview {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.rl-product-preview img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.rl-product-details {
+    flex: 1;
+}
+
+.rl-product-details h4 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+.rl-price {
+    color: #e74c3c;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.rl-stock {
+    color: #666;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Meta box de lección */
+#rl_lesson_restrictions {
+    background: #fff;
+}
+
+.rl-meta-box-content {
+    padding: 10px;
+}
+
+.rl-checkbox-wrapper {
+    margin-bottom: 15px;
+}
+
+.rl-checkbox-wrapper label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.rl-checkbox-wrapper input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Tooltips de ayuda */
+.rl-help-tip {
+    color: #666;
+    margin-left: 5px;
+    cursor: help;
+}
+
+/* Estado de carga */
+.rl-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.rl-loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Mensajes de notificación */
+.rl-notice {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+    position: relative;
+}
+
+.rl-notice-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.rl-notice-error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.rl-notice-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .rl-settings-wrapper {
+        margin: 10px 0;
+    }
+
+    .rl-settings-content {
+        padding: 20px;
+    }
+
+    .rl-form-group input[type="text"],
+    .rl-form-group input[type="number"],
+    .rl-form-group select,
+    .rl-form-group textarea {
+        font-size: 16px; /* Prevenir zoom en iOS */
+    }
+}
+
+/* Animaciones */
+.rl-fade {
+    transition: opacity 0.3s ease;
+}
+
+.rl-fade.rl-fade-enter {
+    opacity: 0;
+}
+
+.rl-fade.rl-fade-enter-active {
+    opacity: 1;
+}
+
+.rl-fade.rl-fade-exit {
+    opacity: 1;
+}
+
+.rl-fade.rl-fade-exit-active {
+    opacity: 0;
+}
+
+/* Estilos para campos deshabilitados */
+.rl-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Estilos para validación de formularios */
+.rl-form-group.has-error input,
+.rl-form-group.has-error select,
+.rl-form-group.has-error textarea {
+    border-color: #dc3545;
+}
+
+.rl-form-group .error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Botones */
+.rl-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rl-btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.rl-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.rl-btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.rl-btn-secondary:hover {
+    background-color: #545b62;
+}
+
+/* Tabs de navegación */
+.rl-tabs {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+}
+
+.rl-tabs .nav-tab {
+    margin-bottom: -1px;
+}
+
+.rl-tabs .nav-tab.nav-tab-active {
+    background: #fff;
+    border-bottom-color: #fff;
+}
+
+/* Tabla de resumen */
+.rl-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.rl-summary-table th,
+.rl-summary-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.rl-summary-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.rl-summary-table tr:hover {
+    background-color: #f8f9fa;
+}
