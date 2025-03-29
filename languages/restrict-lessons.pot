@@ -1,0 +1,163 @@
+# Copyright (C) 2024 Your Name
+# This file is distributed under the same license as the Restrict Lessons plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Restrict Lessons 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/restrict-lessons\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-01T00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: restrict-lessons\n"
+
+#. Plugin Name of the plugin
+msgid "Restrict Lessons"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://yourwebsite.com/restrict-lessons"
+msgstr ""
+
+#. Description of the plugin
+msgid "Un plugin personalizado para restringir lecciones específicas dentro de cursos de Tutor LMS y habilitarlas mediante compras adicionales en WooCommerce."
+msgstr ""
+
+#. Author of the plugin
+msgid "Your Name"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://yourwebsite.com"
+msgstr ""
+
+#: restrict-lessons.php:54
+msgid "El plugin Restrict Lessons requiere los siguientes plugins: "
+msgstr ""
+
+#: restrict-lessons.php:71
+msgid "Por favor, instala y activa WooCommerce y Tutor LMS antes de activar este plugin."
+msgstr ""
+
+#: restrict-lessons.php:82
+msgid "Estudiante RL"
+msgstr ""
+
+#: includes/admin-settings.php:24
+msgid "Configuración de Lecciones Restringidas"
+msgstr ""
+
+#: includes/admin-settings.php:25
+msgid "Lecciones Restringidas"
+msgstr ""
+
+#: includes/admin-settings.php:41
+msgid "Configuración General"
+msgstr ""
+
+#: includes/admin-settings.php:48
+msgid "Título del Modal"
+msgstr ""
+
+#: includes/admin-settings.php:53
+msgid "Contenido Restringido"
+msgstr ""
+
+#: includes/admin-settings.php:58
+msgid "Mensaje del Modal"
+msgstr ""
+
+#: includes/admin-settings.php:63
+msgid "Este contenido requiere una compra adicional."
+msgstr ""
+
+#: includes/admin-settings.php:68
+msgid "Texto del Botón de Compra"
+msgstr ""
+
+#: includes/admin-settings.php:73
+msgid "Comprar Actualización"
+msgstr ""
+
+#: includes/admin-settings.php:89
+msgid "Configuración guardada"
+msgstr ""
+
+#: includes/admin-settings.php:115
+msgid "Configura las opciones generales para las lecciones restringidas."
+msgstr ""
+
+#: includes/admin-settings.php:171
+msgid "Restricciones de la Lección"
+msgstr ""
+
+#: includes/admin-settings.php:193
+msgid "Lección Restringida"
+msgstr ""
+
+#: includes/admin-settings.php:198
+msgid "Producto de Actualización:"
+msgstr ""
+
+#: includes/admin-settings.php:200
+msgid "Seleccionar producto..."
+msgstr ""
+
+#: includes/admin-settings.php:215
+msgid "Año de Actualización:"
+msgstr ""
+
+#: includes/lesson-access-handler.php:40
+msgid "Error de seguridad"
+msgstr ""
+
+#: includes/lesson-access-handler.php:48
+msgid "Lección no válida"
+msgstr ""
+
+#: includes/lesson-access-handler.php:56
+msgid "Acceso permitido"
+msgstr ""
+
+#: includes/lesson-access-handler.php:63
+msgid "Esta lección es parte de la actualización %d. Por favor, compra la actualización para acceder."
+msgstr ""
+
+#: templates/modal-content.php:39
+msgid "Cerrar"
+msgstr ""
+
+#: templates/modal-content.php:71
+msgid "Precio:"
+msgstr ""
+
+#: templates/modal-content.php:79
+msgid "Actualización para el año %d"
+msgstr ""
+
+#: templates/modal-content.php:98
+msgid "¡Descuento del %d%% disponible!"
+msgstr ""
+
+#: templates/modal-content.php:116
+msgid "Accederás al contenido inmediatamente después de la compra."
+msgstr ""
+
+#: templates/modal-content.php:120
+msgid "Por favor %1$sinicia sesión%2$s o %3$sregístrate%4$s para comprar."
+msgstr ""
+
+#: includes/class-restrict-lessons.php:89
+msgid "Contenido restringido"
+msgstr ""
+
+#: includes/certificate-customization.php:0
+msgid "Certificado actualizado correctamente"
+msgstr ""
+
+#: includes/certificate-customization.php:0
+msgid "Error al actualizar el certificado"
+msgstr ""
