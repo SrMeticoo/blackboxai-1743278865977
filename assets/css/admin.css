@@ -1,0 +1,231 @@
+/* Admin General Styles */
+.lottery-admin-page {
+    margin: 20px;
+}
+
+/* Product Data Panel Styles */
+#lottery_product_data .options_group {
+    padding: 15px;
+}
+
+#lottery_product_data .form-field {
+    margin: 15px 0;
+}
+
+/* Lottery Numbers Grid */
+.lottery-numbers-field {
+    margin: 20px 0;
+}
+
+.lottery-numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 8px;
+    margin: 15px 0;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.number-checkbox {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.number-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.number-checkbox span {
+    display: block;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.number-checkbox input[type="checkbox"]:checked + span {
+    background: #2271b1;
+    color: white;
+    border-color: #2271b1;
+}
+
+.number-checkbox input[type="checkbox"]:hover + span {
+    background: #f0f0f0;
+}
+
+.number-checkbox input[type="checkbox"]:checked:hover + span {
+    background: #135e96;
+}
+
+/* Winners Table Styles */
+.lottery-winners-table {
+    margin-top: 20px;
+}
+
+.lottery-winners-table .widefat {
+    border-spacing: 0;
+    width: 100%;
+    clear: both;
+    margin: 0;
+}
+
+.lottery-winners-table th {
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+}
+
+.lottery-winners-table td {
+    padding: 12px 10px;
+    vertical-align: middle;
+}
+
+.lottery-winners-table .button {
+    margin-right: 5px;
+}
+
+.lottery-winners-table .button i {
+    margin-right: 5px;
+}
+
+/* History Table Styles */
+.lottery-history-filters {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.lottery-history-filters select,
+.lottery-history-filters input {
+    min-width: 200px;
+}
+
+.lottery-history-table .status-completed,
+.lottery-history-table .status-failed {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.lottery-history-table .status-completed {
+    background: #dff0d8;
+    color: #3c763d;
+}
+
+.lottery-history-table .status-failed {
+    background: #f2dede;
+    color: #a94442;
+}
+
+/* Modal Styles */
+.lottery-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 160000;
+}
+
+.lottery-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.lottery-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+}
+
+/* No Results States */
+.no-winners,
+.no-history {
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.no-winners p,
+.no-history p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Action Buttons */
+.button.draw-winner,
+.button.notify-winner,
+.button.view-details {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button.draw-winner {
+    background: #4CAF50;
+    color: white;
+    border-color: #388E3C;
+}
+
+.button.draw-winner:hover {
+    background: #388E3C;
+}
+
+.button.notify-winner {
+    background: #2196F3;
+    color: white;
+    border-color: #1976D2;
+}
+
+.button.notify-winner:hover {
+    background: #1976D2;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .lottery-history-filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lottery-history-filters select,
+    .lottery-history-filters input {
+        width: 100%;
+    }
+
+    .lottery-numbers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    }
+}
